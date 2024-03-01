@@ -1,0 +1,116 @@
+
+  /* Add this dynamic CSS to your contact page */
+
+  body {
+    background-color: #626161;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #f1f1f1; /* Background color for navbar */
+  }
+  
+  .navbar img {
+    max-width: 100px; /* Set a maximum width for the logo image */
+    height: auto;
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    display: inline-block;
+    margin-right: 15px; /* Adjust margin between list items */
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #333; /* Link color */
+    font-weight: bold;
+  }
+  .navbar ul li a:hover {
+    color: #008CBA; /* Change color on hover */
+    /* Additional hover styles can be added here */
+  }
+  
+  .content {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    font-size: 24px;
+    color: #0077b6;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+  }
+
+  form {
+    margin-top: 20px;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  button[type="submit"] {
+    background-color: #0077b6;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  button[type="submit"]:hover {
+    background-color: #055b9e;
+  }
+
+  .contact-info {
+    margin-top: 20px;
+  }
+
+  .contact-info h2 {
+    font-size: 20px;
+    color: #0077b6;
+  }
+
+  .contact-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>BitBrush</title>
+  </head>
+  
+  <style>
+    /* Basic button styles */
+    .MyButton {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      border: 2px solid #008cba;
+      border-radius: 5px;
+      color: #fffdfd;
+      background-color: #008cba;
+      cursor: pointer;
+      height: 50px;
+      width: 80px;
+    }
+
+    /* Hover effect */
+    #MyButton:hover {
+      background-color: #7c7c7c;
+      border-color: #ffffff;
+    }
+  </style>
+  <body>
+    
+    <main>
+      <nav class="navbar">
+        <img src="img/logohf.jpg" alt="" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#new">new</a></li>
+          <li><a href="/contect.html">Contact</a></li>
+         
+        </ul>
+      </nav>
+      <div class="content">
+        <div class="column">
+          <img src="images/image-web-3-desktop.jpg" alt="" />
+          <div class="row">
+            <div class="title">
+              <h1>BitBrush</h1>
+              <h2>A Online Code Editor</h2>
+            </div>
+            <div class="text">
+              <p>
+                is a online compiler is a web-based tool that allows developers
+                to write, compile, and run code directly in a web browser
+                without the need for installing a dedicated development
+                environment on their local machine.
+              </p>
+              <button id="MyButton">Try Now</button>
+
+              <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    document.getElementById("MyButton").addEventListener("click", function () {
+                        window.location.href = "E:/livecodeeditor/ide.js";
+                    });
+                });
+            </script>
+            
+            </div>
+          </div>
+        </div>
+
+        <div class="energy">
+          <div class="first class">
+            <h2>New</h2>
+            <p class="title hover">Multiple Language</p>
+            <p class="desc">
+              You can run a Languages like Python, PHP, C++, JavaScript And
+              NodeJS
+            </p>
+          </div>
+          <hr />
+          <div class="second class">
+            <p class="title hover">Easy To Use</p>
+            <p class="desc">
+              it's user friendly & there is no any intruction to run programe
+            </p>
+          </div>
+          <hr />
+          <div class="third class">
+            <p class="title hover">NO SignUp OR LogIn is required</p>
+            <p class="desc">you can able to use without creating account</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

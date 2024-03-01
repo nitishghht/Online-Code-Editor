@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/contect.css"> <!-- Link your CSS file here -->
+  <title>Contact Us - BitBrush</title>
+</head>
+<body>
+  <main>
+    <nav class="navbar">
+      <img src="img/logohf.jpg" alt="">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#new">new</a></li>
+        <li><a href="/contect.html">Contact</a></li>
+        <li><a href="/login.html">Log In</a></li>
+      </ul>
+    </nav>
+    <div class="content">
+      <h1>Contact Us</h1>
+      <p>If you have any questions, feedback, or need assistance, please feel free to get in touch with us using the form below or our contact information.</p>
+      <hr>
+      <script>
+        function validateForm() {
+          var name = document.getElementById("name").value;
+          var email = document.getElementById("email").value;
+          var message = document.getElementById("message").value;
+    
+          if (name === "" || email === "" || message === "") {
+            alert("Please fill in all the fields.");
+            window.location.href = "index.html";
+            return false; // Prevent form submission
+          }
+    
+          // You can add more validation here, e.g., checking the email format.
+    
+          // If the form is valid, show a confirmation message.
+          alert("Thank you for your message! We'll get back to you soon.");
+          return true; // Allow form submission
+        }
+      </script>
+      <!-- Contact Form -->
+      <form action="submit_contact.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button id="submitButton" type="submit">Submit</button>
+      </form>
+
+      <!-- Contact Information -->
+      <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p>Email: contact@bitbrush.com</p>
+        <p>Phone: +1 (123) 456-7890</p>
+        <p>Address: 123 Code Street, Webville</p>
+      </div>
+      <script>
+        document.getElementById('submitButton').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default form submission behavior
+            // Refresh the page when the submit button is clicked
+            window.location.submit();
+        });
+       
+    </script>
+    </div>
+  </main>
+</body>
+</html>
